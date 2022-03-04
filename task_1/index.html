@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Form</title>
+</head>
+<body>
+    <header> 
+        <h1>Header</h1>
+    </header>
+    <main>
+        <div class="bg-popup"></div>
+        <div class="form">
+            <h2>Оставьте номер телефона</h2>
+            <form action="">
+                <div class="form-element">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя" required> 
+                </div>
+                <div class="form-element">
+                    <label for="phone">Номер телефона:</label>
+                    <input type="tel" id="phone" placeholder="Введите номер телефона" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="17">
+                </div>
+                <div class="form-element">
+                <input type="submit" class="btn" value="Отправить">
+            </div>
+            </form>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>  
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

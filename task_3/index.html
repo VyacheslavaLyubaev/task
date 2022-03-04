@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    
+    <div class="form">
+        <h2>Оставьте отзыв</h2>
+        <form action="">
+            <div class="form-element">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" placeholder="Введите имя" required> 
+            </div>
+            <div class="form-element">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Введите почту" required> 
+            </div>
+            <div class="form-element">
+                <label for="phone">Номер телефона:</label>
+                <input type="tel" id="phone" placeholder="Введите номер телефона" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="17">
+            </div>
+            <div class="form-element">
+                <label for="comment">Комментарий:</label>
+                <textarea name="comment" id="comment" cols="30" rows="3"></textarea>
+            </div>
+            <div class="form-element">
+            <input type="submit" value="Отправить">
+        </div>
+        </form>
+    </div>
+
+
+</body>
+</html>

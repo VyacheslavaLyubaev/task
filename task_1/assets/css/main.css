@@ -1,0 +1,87 @@
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    display: block;
+    height: 35px;
+    width: 100%;
+    background: rgb(69, 86, 238);
+}
+
+.bg-popup{	
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgb(105, 105, 105);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    z-index: 400;
+    cursor: pointer;
+}
+
+.form {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(102, 180, 233, 0.685);
+    z-index: 500;
+}
+
+.form h2 {
+    text-align: center;
+    color: #222;
+    margin: 10px 0 20px;
+}
+
+.form .form-element {
+    margin: 15px 0px;
+}
+
+.form .form-element label{
+    font-size: 14px;
+    color: #222;
+}
+
+.form .form-element input[type="text"],
+.form .form-element input[type="tel"],
+.form .form-element textarea {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.form .form-element input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.form .form-element input:hover{
+    border: 1px solid rgba(111, 137, 250, 0.397);
+}
+
+
+.form .form-element input[type="submit"]:hover {
+    box-shadow: 0px 0px 14px 0px rgba(99, 107, 103, 0.78);
+}
